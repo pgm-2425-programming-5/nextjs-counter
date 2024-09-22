@@ -1,6 +1,6 @@
 /* components/CounterButton.module.css */
 .button {
-    background-color: #4caf50;
+    background-color: blue;
     color: white;
     font-size: 1rem;
     padding: 10px 20px;
@@ -12,6 +12,14 @@
   }
   
   .button:hover {
-    background-color: #45a049;
+    filter: brightness(0.7);
   }
   
+
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }

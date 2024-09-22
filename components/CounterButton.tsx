@@ -3,12 +3,14 @@ import styles from './styles/CounterButton.module.css';
 
 interface CounterButtonProps {
   onClick: () => void;
+  color?: string;
   children: React.ReactNode;
 }
 
-const CounterButton = ({ onClick, children }: CounterButtonProps) => {
+const CounterButton = ({ onClick, color, children }: CounterButtonProps) => {
+  const buttonColor = styles[color === 'green' ? 'green' : 'red'];
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={`${styles.button} ${buttonColor}`} onClick={onClick}>
       {children}
     </button>
   );
