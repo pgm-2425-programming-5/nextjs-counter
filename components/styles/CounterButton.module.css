@@ -1,0 +1,17 @@
+/* components/CounterButton.module.css */
+.button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
